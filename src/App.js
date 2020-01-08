@@ -50,6 +50,13 @@ calculateFaceLocation = (data) => {
  }
 }
 
+componentDidMount () {
+  fetch('http://localhost:3000')
+  .then(res => res.json())
+  .then(console.log)
+
+}
+
 displayFaceBox = (box) => {
   this.setState({box: box});
 }
